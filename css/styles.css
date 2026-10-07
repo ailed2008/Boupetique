@@ -1269,7 +1269,7 @@ body[data-page="login"] {
   margin-left: 0;
 }
 
-/*! Botones TEMPORALES de productos, BORRAR CUANDO SE QUITEN BOTONES*/
+
 .botones-productos {
   display: flex;
   justify-content: center;
@@ -1284,11 +1284,9 @@ body[data-page="login"] {
     auto;
 }
 
-/*! Botones TEMPORALES de productos, BORRAR CUANDO SE QUITEN BOTONES*/
 .botones-productos:hover,
 .botones-productos:focus {
   background-color: #2c4434;
-  /* Reemplaza por tu color verde oscuro */
   color: #ffffff;
   text-decoration: none;
 }
@@ -1853,7 +1851,6 @@ div.total {
   padding: 4px !important;
   box-shadow: 0 4px 14px rgba(47, 58, 61, 0.06) !important;
   width: 320px !important;
-  /* Ancho suficiente para ambos botones */
   box-sizing: border-box !important;
 }
 
