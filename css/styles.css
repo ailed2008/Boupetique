@@ -639,26 +639,17 @@ footer h5 {
 }
 
 /*Olan*/
-/*Formulario de registro de usuario titulo y titulo de fehca de nacimiento */
+/*Formulario de registro de usuario titulo y titulo de fehca de nacimiento se pasa a registro.css */
 
-.titleR {
-  font-weight: 600;
-  letter-spacing: -1px;
-  position: relative;
-  display: flex;
 
-  font-size: 30px;
-  font-weight: bold;
-}
 
-.titleF {
-  font-size: 1rem;
-  /* tamaño de letra */
-  font-weight: bold;
-  /* en negritas */
-  color: #333;
-  /* color */
-}
+
+
+
+
+
+
+
 
 /* COMPARATIVA DE CARDS DEL EQUIPO */
 .team-version-heading {

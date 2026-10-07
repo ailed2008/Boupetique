@@ -17,7 +17,7 @@
     <!-- Conexion con swetalert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Conexión a CSS -->
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/Registro.css">
     <!--estilos solo para dibujar svg perrito-->
     <link rel="stylesheet" href="../css/stylesPerrito.css">
 
@@ -36,13 +36,22 @@
             <br>
             <br>
             <div class="text-center mb-4">
-                <span class="text-uppercase fw-bold">Registro de Cuenta</span>
+              <!--  <span class="text-uppercase fw-bold">Registro de Cuenta</span>
                 <h1 class="fw-bold my-2"></h1>
                 <p class="text-muted lead mx-auto" style="max-width: 600px;">
                     Registrate para obtener descuentos, venta de nuevos productos y más... antes que nadie..es gratis.
-                </p>
-                <p class="signin">¿Ya tienes cuenta ? <a href="/html/login.html">Inicia sesion</a> </p>
+                </p> -->
+                <p class="signin">¿Ya tienes cuenta ? <a href="/html/login.html"></a> </p>
             </div>
+
+            <div class="auth-toggle-container">
+    <!-- Tipo Petco Toggle-->
+    <a href="login.html" class="toggle-btn">Iniciar sesión</a>
+    
+    <!-- Tipo petco -->
+    <a href="registro.html" class="toggle-btn active">Registrarme</a>
+</div>
+
             <!-- Inicio de row para la tabla de registro de usuario.   -->
             <div class="row justify-content-center">
                 <div class="form col-md-8 col-lg-6">
@@ -174,6 +183,9 @@
                                     <option value="31">31</option>
                                 </select>
                             </div>
+                            </div> <!--Fin fecha de nacimiento-->
+
+
                             <div class="row mt-3">
                                 <p class="titleF">Datos de tu mascota</p>
                                 <div class="col-md-6 mb-3">
@@ -191,6 +203,7 @@
                                     </select>
                                 </div>
                             </div>
+
                             <div class="row">
                                 <div class="col-md-6 mb-3">
                                     <label for="tamano" class="form-label">Tamaño de tu mascota </label>
@@ -227,7 +240,10 @@
                                     <option value="Entre 9 y 10 años">Entre 9 y 10 años</option>
                                     <option value="Más de 10 años">Más de 10 años</option>
                                 </select>
-                            </div> <!---FIN OPCIONES -->
+                            </div> 
+                            
+                            
+                            <!---FIN OPCIONES -->
                             <!-- Contraseña  -->
                             <div class="row mt-3"> <!--para acomodarlos por filas se engloban dos -->
                                 <div class="col-md-6 mb-4">
