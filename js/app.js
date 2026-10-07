@@ -182,4 +182,32 @@ document.addEventListener("DOMContentLoaded", async () => {
     initializeAutoHideHeader();
     initializePricing();
     setBilling("monthly");
+    initializePasswordToggle(); // 
 });
+
+
+function initializePasswordToggle() {
+    const toggleBtn = document.getElementById("togglePassword");
+    const passwordInput = document.getElementById("passwordInput");
+    const eyeIcon = document.getElementById("eyeIcon");
+
+    if (!toggleBtn || !passwordInput || !eyeIcon) {
+        return;
+    }
+
+    const eyeOpen = `
+      <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-8.837 8.212-6.633 8.212s-6.298-7.732-6.633-8.212A13 13 0 0 1 1.173 8"/>
+      <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
+    `;
+
+    const eyeClosed = `
+      <path d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7 7 0 0 0-2.79.588l.77.771A6 6 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-1.745 2.05-3.666 3.12zm-3.707-1.849L8.414 8.151a1.5 1.5 0 0 0-.565-.565L6.611 6.348a2.5 2.5 0 0 1 3.041 3.041M1.646 1.146l13.208 13.208-.708.708-2.072-2.072A8.6 8.6 0 0 1 8 13.5C3 13.5 0 8 0 8s1.543-2.726 4.146-4.524L1.146 1.854zM2.87 4.792A13 13 0 0 0 1.173 8a13 13 0 0 0 1.66 2.043C4.12 11.332 5.88 12.5 8 12.5c1.472 0 2.825-.562 3.978-1.503L10.3 9.32a3.5 3.5 0 0 1-4.62-4.62z"/>
+    `;
+
+    toggleBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const isPassword = passwordInput.getAttribute("type") === "password";
+        passwordInput.setAttribute("type", isPassword ? "text" : "password");
+        eyeIcon.innerHTML = isPassword ? eyeClosed : eyeOpen;
+    });
+}
